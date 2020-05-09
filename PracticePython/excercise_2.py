@@ -2,6 +2,10 @@
 Script checking if given input is a digit and base on that deciding if first is a multiplication of 4, even or odd
 number. Also checking if first and second dumber are divided equally and returning rounded division to 2 significant
 digits. In case if provided data is containing unsupported char program will terminate and raise an TypeError.
+
+ :param number1 int
+ :param number2 int
+ :return str
 """
 
 number1 = input("Please provide a int number.\n")

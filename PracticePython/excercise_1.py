@@ -1,5 +1,9 @@
 """
 Simple script asking about first and last name and then printing it in the same order.
+
+ :param sir_name str
+ :param first_name str
+ :return str
 """
 
 sir_name = input("Pass your sir name, please\n")
