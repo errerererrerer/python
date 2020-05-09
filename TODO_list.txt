@@ -1,0 +1,2 @@
+1. Create unit script for each exercise where user input data is mandatory
+2. Create a manager to run all unit scripts in 1 shoot.

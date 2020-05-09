@@ -14,26 +14,14 @@ for data in test_data:
     if data > 5:
         print(data)
 
-# Extras 1
-collection = []
-for data in test_data:
-    if data < 5:
-        collection.append(data)
-print(collection)
-
-# Extras 2
-collection = []
-for data in test_data:
-    if data < 5: collection.append(data)  # PEP8: E701 Error! Never write things like this
+# Extras 1 & 2
+collection = [data for data in test_data if data < 5]
 print(collection)
 
 # Extras 3
-data_input = input("Please provide at least 1 char containing digits")
-collection = []
+data_input = input("Please provide at least 1 char containing digits\n")
 if data_input.isdecimal():
-    for data in test_data:
-        if data < data_input:
-            collection.append(data)
+    collection = [data for data in test_data if data < int(data_input)]
     print(collection)
 else:
     raise TypeError("Provided input is not a digit")
