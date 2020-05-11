@@ -29,7 +29,7 @@ print(uniques)
 # Extra 1 & 2
 
 random = [sample for sample in range(randrange(0, 100))]
-next_random= [randrange(1, 100) for _ in range(0, 100)]
+next_random = [randrange(1, 100) for _ in range(0, 100)]
 
 uniques = list(dict.fromkeys([single_element for single_element in random if single_element in next_random]))
 print(uniques)
