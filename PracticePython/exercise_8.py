@@ -9,7 +9,7 @@ Remember the rules:
     Paper beats rock
 """
 
-from random import random
+# from random import random
 
 FEEDBACK = None
 while FEEDBACK:
