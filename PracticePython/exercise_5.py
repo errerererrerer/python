@@ -18,18 +18,18 @@ both lists.
 
 :return [int]
 """
-from random import randrange
+from RANDOM import randrange
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+A = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+B = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
-uniques = list(dict.fromkeys([single_element for single_element in a if single_element in b]))
-print(uniques)
+UNIQUES = list(dict.fromkeys([single_element for single_element in A if single_element in B]))
+print(UNIQUES)
 
 # Extra 1 & 2
 
-random = [sample for sample in range(randrange(0, 100))]
-next_random = [randrange(1, 100) for _ in range(0, 100)]
+RANDOM = [sample for sample in range(randrange(0, 100))]
+NEXT_RANDOM = [randrange(1, 100) for _ in range(0, 100)]
 
-uniques = list(dict.fromkeys([single_element for single_element in random if single_element in next_random]))
-print(uniques)
+UNIQUES = list(dict.fromkeys([single_element for single_element in RANDOM if single_element in NEXT_RANDOM]))
+print(UNIQUES)

@@ -8,15 +8,15 @@ message is printed out.
 :return str
 """
 
-data_input = input("Provide a string of chars\n")
-if data_input.isascii():
-    if data_input == data_input[::-1]:
+DATA_INPUT = input("Provide a string of chars\n")
+if DATA_INPUT.isascii():
+    if DATA_INPUT == DATA_INPUT[::-1]:
         print("{data_input} is a pure palindrome\n{data_input_palindrome}".format(
-            data_input=data_input, data_input_palindrome=data_input[::-1]))
-    elif data_input.upper() == data_input.upper()[::-1]:
+            data_input=DATA_INPUT, data_input_palindrome=DATA_INPUT[::-1]))
+    elif DATA_INPUT.upper() == DATA_INPUT.upper()[::-1]:
         print("{data_input} is a palindrome if CamelCase is ignored\n{data_input_palindrome}".format(
-            data_input=data_input, data_input_palindrome=data_input.upper()[::-1]))
+            data_input=DATA_INPUT, data_input_palindrome=DATA_INPUT.upper()[::-1]))
     else:
-        print("{data_input} is not a palindrome".format(data_input=data_input))
+        print("{data_input} is not a palindrome".format(data_input=DATA_INPUT))
 else:
-    raise TypeError("Use only Ascii chars: {data_input}".format(data_input=data_input))
+    raise TypeError("Use only Ascii chars: {data_input}".format(data_input=DATA_INPUT))

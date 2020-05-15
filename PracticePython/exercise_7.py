@@ -7,5 +7,5 @@ Script that returns mod 2 (even) elements of a list of hardcoded elements.
 returns str
 """
 
-a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-print([element for element in a if element % 2 == 0])
+A = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+print([element for element in A if element % 2 == 0])

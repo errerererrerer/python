@@ -11,5 +11,6 @@ Remember the rules:
 
 from random import random
 
-feedback = None
-while feedback:
+FEEDBACK = None
+while FEEDBACK:
+    pass

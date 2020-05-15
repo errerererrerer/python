@@ -10,11 +10,11 @@ Script checking what divisors input int have and print them out in a list.
 :return [int]
 """
 
-data_input = input("Provide a int chars.\n")
+DATA_INPUT = input("Provide a int chars.\n")
 
-if data_input.isdecimal():
-    data_input = int(data_input)
-    dividers = [divider for divider in range(1, data_input + 1) if data_input % divider == 0]
-    print(dividers)
+if DATA_INPUT.isdecimal():
+    DATA_INPUT = int(DATA_INPUT)
+    DIVIDERS = [divider for divider in range(1, DATA_INPUT + 1) if DATA_INPUT % divider == 0]
+    print(DIVIDERS)
 else:
     raise TypeError("Provided input is not a digit")

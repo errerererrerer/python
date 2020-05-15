@@ -22,21 +22,21 @@ that are less then typed int.
 :return int, [int]
 """
 
-test_data = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+TEST_DATA = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
 # Main
-for data in test_data:
+for data in TEST_DATA:
     if data > 5:
         print(data)
 
 # Extras 1 & 2
-collection = [data for data in test_data if data < 5]
-print(collection)
+COLLECTION = [data for data in TEST_DATA if data < 5]
+print(COLLECTION)
 
 # Extras 3
-data_input = input("Please provide at least 1 char containing digits\n")
-if data_input.isdecimal():
-    collection = [data for data in test_data if data < int(data_input)]
-    print(collection)
+DATA_INPUT = input("Please provide at least 1 char containing digits\n")
+if DATA_INPUT.isdecimal():
+    COLLECTION = [data for data in TEST_DATA if data < int(DATA_INPUT)]
+    print(COLLECTION)
 else:
     raise TypeError("Provided input is not a digit")
